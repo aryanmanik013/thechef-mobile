@@ -1,0 +1,73 @@
+{
+    "expo": {
+        "name": "The Chef - Delivery App",
+        "slug": "thechef-delivery-app",
+        "version": "2.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "cover",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "icon": "./assets/icon-ios.png",
+            "bundleIdentifier": "com.avaron.thechefDeliveryApp",
+            "buildNumber": "3.6.8",
+            "supportsTablet": true,
+            "infoPlist": {
+                "NSPhotoLibraryUsageDescription": "would like access to your photo gallery",
+                "NSCameraUsageDescription": "would like to use your camera",
+                "NSPhotoLibraryAddUsageDescription": "would like to save photos to your photo gallery"
+            },
+            "config": {
+                "googleMapsApiKey": "AIzaSyDv4tbjxizDdu5cz9alkaGdWZydkkf55BQ"
+            }
+        },
+        "android": {
+            "package": "com.avaron.thechefdeliveryapp",
+            "useNextNotificationsApi": true,
+            "googleServicesFile": "./assets/google-services.json",
+            "versionCode": 9,
+            "permissions": [
+                "ACCESS_COARSE_LOCATION",
+                "ACCESS_FINE_LOCATION",
+                "ACCESS_BACKGROUND_LOCATION",
+                "READ_EXTERNAL_STORAGE",
+                "CAMERA",
+                "WRITE_EXTERNAL_STORAGE"
+            ],
+            "config": {
+                "googleMaps": {
+                    "apiKey": "AIzaSyDv4tbjxizDdu5cz9alkaGdWZydkkf55BQ"
+                }
+            }
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "androidStatusBar": {
+            "barStyle": "light-content"
+        },
+        "packagerOpts": {
+            "config": "metro.config.js",
+            "sourceExts": [
+                "js",
+                "json",
+                "ts",
+                "tsx",
+                "vue"
+            ]
+        },
+        "notification": {
+            "icon": "./assets/icon.png",
+            "color": "#0e1030"
+        }
+    }
+}
